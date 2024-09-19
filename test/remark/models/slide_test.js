@@ -87,7 +87,7 @@ describe('Slide', function () {
           })
         , slide = new Slide(1, 1, {
             content: [''],
-            properites: {name: 'b'}
+            properties: {name: 'b'}
           }, template);
 
       slide.content.should.eql(['{{name}}', '']);

@@ -6,7 +6,7 @@ module.exports = TimerViewModel;
 function TimerViewModel(events, element, options) {
   var self = this;
 
-  self.options = extend({}, { enabled: true, resetable: true, startOnChange: true, formatter: defaultFormatter }, options || {});
+  self.options = extend({}, { enabled: true, resettable: true, startOnChange: true, formatter: defaultFormatter }, options || {});
   self.element = element;
   self.reset();
 
@@ -29,7 +29,7 @@ function TimerViewModel(events, element, options) {
   });
 
   events.on('resetTimer', function () {
-    if (self.options.resetable) {
+    if (self.options.resettable) {
       self.reset();
     }
   });

@@ -73,7 +73,7 @@ describe('Timer', function () {
     });
 
     it('should respond to a resetTimer event unless \'resetable\' option is set to \'false\'', function () {
-      timer = new Timer(events, element, { resetable: false });
+      timer = new Timer(events, element, { resettable: false });
 
       events.emit('startTimer');
       events.emit('resetTimer');
