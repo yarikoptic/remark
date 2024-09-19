@@ -32,7 +32,7 @@ https://highlightjs.org/
   }
 
 }(function(hljs) {
-  // Convenience variables for build-in objects
+  // Convenience variables for built-in objects
   var ArrayProto = [],
       objectKeys = Object.keys;
 
@@ -3300,7 +3300,7 @@ function(hljs) {
         //I don't really know if this is totally relevant
       },
       {
-        className: 'title', //symbol would be most accurate however is higlighted just like built_in and that makes up a lot of AutoHotkey code
+        className: 'title', //symbol would be most accurate however is highlighted just like built_in and that makes up a lot of AutoHotkey code
 		                        //meaning that it would fail to highlight anything
         variants: [
           {begin: '^[^\\n";]+::(?!=)'},
@@ -9085,7 +9085,7 @@ function(hljs) {
 
   var CONSTRUCTOR = {
     className: 'type',
-    begin: '\\b[A-Z][\\w\']*', // TODO: other constructors (build-in, infix).
+    begin: '\\b[A-Z][\\w\']*', // TODO: other constructors (built-in, infix).
     relevance: 0
   };
 
@@ -18262,7 +18262,7 @@ function(hljs){
   var PS_HELPTAGS = {
     className: "doctag",
     variants: [
-      /* no paramater help tags */
+      /* no parameter help tags */
       {
         begin: /\.(synopsis|description|example|inputs|outputs|notes|link|component|role|functionality)/
       },
@@ -18315,7 +18315,7 @@ function(hljs){
     ]
   };
 
-  // Using statment, plus type, plus assembly name.
+  // Using statement, plus type, plus assembly name.
   var PS_USING = {
     begin: /using\s/, end: /$/,
     returnBegin: true,
@@ -23341,7 +23341,7 @@ function(hljs) {
           PARAMS
         ]
       },
-      { // prevent references like module.id from being higlighted as module definitions
+      { // prevent references like module.id from being highlighted as module definitions
         begin: /module\./,
         keywords: { built_in: 'module' },
         relevance: 0
@@ -24178,7 +24178,7 @@ function(hljs) {
         /*
         The lookahead pattern (?=...) ensures that 'begin' only matches
         '<style' as a single word, followed by a whitespace or an
-        ending braket. The '$' is needed for the lexeme to be recognized
+        ending bracket. The '$' is needed for the lexeme to be recognized
         by hljs.subMode() that tests lexemes outside the stream.
         */
         begin: '<style(?=\\s|>)', end: '>',
