@@ -1,6 +1,8 @@
 [codespell]
 # Ref: https://github.com/codespell-project/codespell#using-a-config-file
-skip = .git*,.codespellrc
+# highlighter.js includes collections of some keywords many of which are partial words or include typos
+skip = .git*,.codespellrc,highlighter.js
 check-hidden = true
-# ignore-regex = 
+# All caps and some names, super long lines
+ignore-regex = \b(Hart|[A-Z]+)\b|.{300,}.*
 # ignore-words-list =
